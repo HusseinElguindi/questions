@@ -20,6 +20,7 @@ function init()
         let remove_btn = document.createElement("div");
         remove_btn.classList.add("remove-btn");
         remove_btn.appendChild(document.createTextNode("Remove"));
+        remove_btn.addEventListener('click', e => remove_q(e.path[1]));
 
         q.appendChild(p);
         q.appendChild(remove_btn);
@@ -67,4 +68,13 @@ function rgbToString(rgb)
     string += ")"
 
     return string;
+}
+
+function remove_q(e)
+{
+    e.style.transitionDuration = "0.35s"
+    e.style.opacity = "0%";
+    setTimeout(() => {
+        e.remove()
+    }, 475);
 }
