@@ -63,9 +63,9 @@ body {
     /* min-height: 100px; */
 }
 
-.q:hover {
+.q:hover, .q:active {
     /* opacity: 0.9; */
-    filter: brightness(90%);
+    /* filter: brightness(90%); */
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
 }
 
@@ -82,14 +82,15 @@ body {
     overflow: auto;
 }
 
-.q:hover > p {
+.q:hover > p, .q:active > p {
     padding-bottom: 10px;
     height: calc(65% - 10px);
     max-height: calc(65% - 10px);
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 1);
 }
 
-.q:hover > .remove-btn {
+
+.q:hover > .remove-btn, .q:active > .remove-btn {
     display: block;
 }
 
@@ -113,8 +114,8 @@ body {
     overflow: hidden;
 }
 
-.remove-btn:hover {
-    opacity: 0.8;
+.remove-btn:hover, .remove-btn:active {
+    background-color: rgba(235, 235, 235);
 }
 
 /* .remove-btn p {
