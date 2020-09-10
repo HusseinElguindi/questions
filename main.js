@@ -74,7 +74,7 @@ function remove_q(e)
 {
     e.style.transitionDuration = "0.35s"
     e.style.opacity = "0%";
-    setTimeout(() => {
+    // setTimeout(() => {
         e.remove()
-    }, 475);
+    // }, 475);
 }
