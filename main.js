@@ -20,7 +20,7 @@ function init()
         let remove_btn = document.createElement("div");
         remove_btn.classList.add("remove-btn");
         remove_btn.appendChild(document.createTextNode("Remove"));
-        remove_btn.addEventListener('click', e => remove_q(e.path[1]));
+        remove_btn.addEventListener('mousedown', e => remove_q(e.path[1]));
 
         q.appendChild(p);
         q.appendChild(remove_btn);
