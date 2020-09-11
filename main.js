@@ -73,9 +73,10 @@ function rgbToString(rgb)
 
 function remove_q(e)
 {
-    e.style.transitionDuration = "0.35s"
-    e.style.opacity = "0%";
-    setTimeout(() => {
-        e.remove()
-    }, 475);
+    e.style.backgroundColor = "rgb(0,0,0)";
+    // e.style.transitionDuration = "0.35s"
+    // e.style.opacity = "0%";
+    // setTimeout(() => {
+    //     e.remove()
+    // }, 475);
 }
