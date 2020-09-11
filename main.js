@@ -8,7 +8,7 @@ function init()
 {
     q_container = document.getElementById("q-container");
 
-    for (let i = 0; i < 100; i++)
+    for (let i = 0; i < 1; i++)
     {
         let q = document.createElement("div");
         q.classList.add("q");
@@ -74,7 +74,7 @@ function remove_q(e)
 {
     e.style.transitionDuration = "0.35s"
     e.style.opacity = "0%";
-    // setTimeout(() => {
+    setTimeout(() => {
         e.remove()
-    // }, 475);
+    }, 475);
 }
