@@ -87,9 +87,13 @@ body {
 }
 
 .q:hover > p, .q:active > p {
+    margin-bottom: 0;
     padding-bottom: 10px;
-    height: calc(65% - 10px);
-    max-height: calc(65% - 10px);
+    height: calc(24vh - 30px - 24px - 16px);
+    max-height: calc(24vh - 30px - 24px - 16px);
+
+    /* height: calc(65% - 10px);
+    max-height: calc(65% - 10px); */
     border-bottom: 0.5px solid rgba(255, 255, 255, 1);
 }
 
